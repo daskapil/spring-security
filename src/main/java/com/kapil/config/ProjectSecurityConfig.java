@@ -10,7 +10,6 @@ import static org.springframework.security.config.Customizer.withDefaults;
 @Configuration
 public class ProjectSecurityConfig {
 
-    // Custom Security Configuration
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(requests -> requests
@@ -20,22 +19,4 @@ public class ProjectSecurityConfig {
         http.httpBasic(withDefaults());
         return http.build();
     }
-
-    // Configuration to deny all requests
-//    @Bean
-//    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-//        http.authorizeHttpRequests(requests -> requests.anyRequest().denyAll());
-//        http.formLogin(withDefaults());
-//        http.httpBasic(withDefaults());
-//        return http.build();
-//    }
-
-    // Configuration to permit all requests
-//    @Bean
-//    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-//        http.authorizeHttpRequests(requests -> requests.anyRequest().permitAll())
-//                .formLogin(withDefaults())
-//                .httpBasic(withDefaults());
-//        return http.build();
-//    }
 }

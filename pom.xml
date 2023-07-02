@@ -8,14 +8,17 @@
 		<version>3.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.kapil</groupId>
-	<artifactId>spring-security-section-2</artifactId>
+	<artifactId>spring-security</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-security-section-2</name>
+	<name>spring-security</name>
 	<description>Demo project for Spring Boot &amp; Spring Security - Section 2</description>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
